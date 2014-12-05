@@ -7,7 +7,7 @@ class Qsignature < Formula
   sha1 'be0e50472221dfb7946e0fdebbe4a817ed7097f9'
 
   def install
-    java = share / 'java'
+    java = share / 'java' / 'qsignature'
     java.install Dir['*.jar']
     bin.mkdir
     open(bin / 'qsignature', 'w') do |file|
