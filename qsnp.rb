@@ -35,7 +35,7 @@ class Qsnp < Formula
         if [ "$jvm_mem_opts" == "" ]; then
             jvm_mem_opts="$default_jvm_mem_opts"
         fi
-        eval java $jvm_mem_opts $jvm_prop_opts -cp #{java}/qsnp-#{version}.jar $pass_args
+        eval java $jvm_mem_opts $jvm_prop_opts -jar #{java}/qsnp-#{version}.jar $pass_args
       EOS
     end
   end
